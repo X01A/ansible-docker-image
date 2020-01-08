@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  centos7:
+    image: indexyz/ansible:centos-7
+    build:
+      context: ./dockerfiles/centos
+      dockerfile: 7.Dockerfile
+
+  debian9:
+    image: indexyz/ansible:debian-9
+    build:
+      context: ./dockerfiles/debian
+      dockerfile: 9.Dockerfile
