@@ -1,4 +1,4 @@
 FROM archlinux
 
-RUN pacman -Syu && \
-    pacman -S ansible
+RUN pacman --noconfirm -Syu ansible && \
+    rm -rf /var/cache/pacman/pkg/*
