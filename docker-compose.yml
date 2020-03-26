@@ -7,6 +7,12 @@ services:
       context: ./dockerfiles/centos
       dockerfile: 7.Dockerfile
 
+  centos8:
+    image: indexyz/ansible:centos-8
+    build:
+      context: ./dockerfiles/centos
+      dockerfile: 8.Dockerfile
+
   debian9:
     image: indexyz/ansible:debian-9
     build:
